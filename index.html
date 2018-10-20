@@ -29,7 +29,10 @@
       <p>The notifications will automatically scale to fit the entire notification text.</p>
       <button class="button" onclick="simpleNotify.notify({ message:'Hey! This is a Simple Notification. It has a lot of text in it, and as you can see the notification scales to fit it all automatically!', level: 'good'})">Show a Long Notification</button>
       <p>The notifications will automatically dismiss after 7 seconds.</p>
-
+      <p>But you can set the duration of dismiss time:</p>
+      <pre><code>simpleNotify.notify({ message:'Hey! This is a simple notification.', notificationTime: 5000 });</code></pre>
+      <p>Also can set `autoDismissing` param to `false` or `true`(default) for change auto dismissible notification</p>
+      <pre><code>simpleNotify.notify({ message:'Hey! This is a simple notification.', autoDismissing: false });</code></pre>
 
       <h1><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instructions</h1>
       <p>SimpleNotify is easy to use.</p>
